@@ -1,0 +1,45 @@
+Git Users and Commits
+
+USER {
+    id
+    name
+}
+
+COMMIT {
+    date
+    message
+    commitHash
+    userId
+    projectId
+}
+
+PROJECTS {
+    name
+    id
+}
+
+USER {
+    name: "Juan",
+    id: 1,
+    commits: [
+        {
+            most recent
+        },
+        {
+            oldest
+        }
+    ]
+}
+
+GET api/commits?userId=1&projectId=2
+
+
+GET api/users
+POST api/commits (request body included)
+POST api/users (request body included)
+GET api/users/:id
+GET api/commits/:id -- make sure to return full user with Commit response
+PATCH api/commits/:id -- used to update commit message
+PUT api/commits/:id -- override commit 
+GET api/users/:id/commits -- all? commits from a given user
+GET api/projects/:id/users
