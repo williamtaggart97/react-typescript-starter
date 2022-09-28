@@ -28,6 +28,16 @@ function filterUsers(users: CustomArrayType) {
     })
 }
 
+function filterUsersWithOptions(users: CustomArrayType, options?: { caseSensitive?: boolean, otherOpts?: any }) {
+    users.forEach(user => {
+        if (typeof user === 'string') {
+            user; // take a look at the hover state
+        } else {
+            user; // and here
+        }
+    })
+}
+
 
 /****
  * 

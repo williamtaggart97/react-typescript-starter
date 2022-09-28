@@ -3,6 +3,7 @@ type GitObject = any; // A Git object is one particular instance of my codebase
 interface User {
     name: string;
     id: number;
+    phoneNumber?: string;
 }
 
 interface Repository {
